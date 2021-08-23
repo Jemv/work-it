@@ -1,0 +1,78 @@
+
+body{
+    margin: 0px;
+    
+}
+form label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+form input{
+    box-sizing: border-box;
+    height: 30px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    margin-top: 6px;
+    width: 100%;
+    display: inline-block;
+    transition: 0.5s;
+    outline: none;
+    min-height: 30px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+input[type=submit]{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    background-color: #ccc  ;
+    width: 200px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #eee;
+}
+form select{
+    box-sizing: border-box;
+    height: 30px;
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    width: 100%;
+    display: inline-block;
+    transition: 0.5s;
+    outline: none;
+    min-height: 30px;
+    margin-top: 6px
+}
+input:focus{
+    border-color: #555;
+}
+select:focus{
+    border-color: #555;
+}
+img{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 20px;
+    border: 0px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #eee;
+    box-shadow: 10px 10px 5px grey;
+    margin-bottom: 100px;
+}
+#myVideo{
+    width: 100%;
+}

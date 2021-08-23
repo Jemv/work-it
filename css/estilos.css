@@ -1,0 +1,80 @@
+.container{
+    float: left;
+    width: 55%;
+    margin-left: 0;
+}
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    min-height: 100vh;
+    background-image: linear-gradient(-45deg, #ffffff 50%, #797979 50%);
+    font-family: 'Raleway', sans-serif;
+}
+
+.center-align {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 0%;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 40%;
+    height: 2px;
+    background-color: #36221c;
+}
+.carousel{
+    min-height: 460px;
+}
+.carousel .carousel-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 300px;
+    height: 300px;
+}
+.carousel .carousel-item img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+.col .s12{
+    padding: 0px;
+}
+.center-align{
+    padding-top: 4%;
+    padding-left: 20px;
+}
+.carousel{
+    padding-top: 0px;
+    padding-left: 50px;
+}
