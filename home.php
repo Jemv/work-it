@@ -6,15 +6,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="style/grid.css">
         <link rel="stylesheet" href="style/scroll_bar.css">
         <link rel="stylesheet" href="style/flip_img.css">
         <link rel="stylesheet" href="style/noselect.css">
-        <link rel="stylesheet" href="style/app_3.css">
         
 
         <title>Home</title>
@@ -33,24 +29,26 @@
 
             
             <div class="element">
-                <div class="titulo">
-                    Leyes
-                </div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="img/leyes.jpg" alt="" class="img_back">
+                <a href="/work/categorias/1.php">
+                    <div class="titulo">
+                        Leyes
                     </div>
-                    <div class="flip-card-back">
-                        En esta seccion puedes encontrar:
-                        <hr>
-                        -Abogados
-                        <br>
-                        -Notarios
-                        <br>
-                        -Despachos
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/leyes.jpg" alt="" class="img_back">
+                        </div>
+                        <div class="flip-card-back">
+                            En esta seccion puedes encontrar:
+                            <hr>
+                            -Abogados
+                            <br>
+                            -Notarios
+                            <br>
+                            -Despachos
 
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
 
@@ -82,54 +80,58 @@
                 </div>
             </div>
 
-
+            
             <div class="element">
-                <div class="titulo">
-                    Medica
-                </div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="img/medico.jpg" alt="" class="img_back">
+                <a href="#">
+                    <div class="titulo">
+                        Medica
                     </div>
-                    <div class="flip-card-back">
-                        En esta seccion puedes encontrar:
-                        <hr>
-                        -Medicos
-                        <br>
-                        -Enfermeros
-                        <br>
-                        -Fisioterapeutas
-                        <br>
-                        -Especialistas
-                        <br>
-                        -Psicologos
-                        <br>
-                        -Terapeutas de Lenguaje
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/medico.jpg" alt="" class="img_back">
+                        </div>
+                        <div class="flip-card-back">
+                            En esta seccion puedes encontrar:
+                            <hr>
+                            -Medicos
+                            <br>
+                            -Enfermeros
+                            <br>
+                            -Fisioterapeutas
+                            <br>
+                            -Especialistas
+                            <br>
+                            -Psicologos
+                            <br>
+                            -Terapeutas de Lenguaje
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
 
             <div class="element">
-                <div class="titulo">
-                    Industrial
-                </div>
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="img/industrias.jpg" alt="" class="img_back">
+                <a href="">
+                    <div class="titulo">
+                        Industrial
                     </div>
-                    <div class="flip-card-back">
-                        En esta seccion puedes encontrar:
-                        <hr>
-                        -Ingenieros
-                        <br>
-                        -Obreros
-                        <br>
-                        -Operadores
-                        <br>
-                        -Tecnicos
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="img/industrias.jpg" alt="" class="img_back">
+                        </div>
+                        <div class="flip-card-back">
+                            En esta seccion puedes encontrar:
+                            <hr>
+                            -Ingenieros
+                            <br>
+                            -Obreros
+                            <br>
+                            -Operadores
+                            <br>
+                            -Tecnicos
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
 
@@ -288,9 +290,5 @@
                 <img src="img/programacion.jpg" alt="">
             </div>
         </div>
-
-
-        <!--===== MAIN JS =====-->
-        <script src="includes/templates/js/nav.js"></script>
     </body>
 </html>
