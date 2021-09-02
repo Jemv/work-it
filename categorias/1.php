@@ -8,40 +8,37 @@
         <title id="title_leyes"></title>
         
         <link rel="stylesheet" type="text/css" href="style/categorias.css?<?php echo time(); ?>"/>
-
+        <title>Leyes</title>
     
     </head>
     <body id="body-pd">
 
-        <?php include_once '../includes/templates/header.php'?>
-
+        <?php include_once 'C:\xampp\htdocs\work\includes\templates\header.php'?>
+        <?php include_once 'C:\xampp\htdocs\work\categorias\php\main.php'?>
         
         <!--=====Table=====-->
-        <header class="header">
+        <div class="categorias_top">
             <h2>
-                Hola
+                Leyes
             </h2>
-            <select name="" c>
+            <select >
                 <option value="0">Escoje tu categoria:</option>
                 <option value="">Abogados</option>
                 <option value="">Notarios</option>
                 <option value="">Despachos</option>
             </select>
-        </header>
+        </div>
+
+        <div class="">
+            <div class="title_grid grid_cat" >    
+                <div class="element">A</div>
+                <div class="element">B</div>
+                <div class="element">C</div>
+                <div class="element">D</div>
+                <div class="element">D</div>
+            </div>
+        </div>
         
-        
-        <table>
-            <tr>
-                <th>
-                    <select name="" id="">
-                        <option value="">Escoje tu ciudad:</option>
-                    </select>
-                </th>
-                <th>Precio</th>
-                <th>Puntuacion</th>
-            </tr>
-            
-        </table>
         
     </body>
 </html>
