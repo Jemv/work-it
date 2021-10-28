@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,6 +18,14 @@
 
         <link rel="stylesheet" href="style/app.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:500,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="test/css" href="plugins/sweetalert2.min.css">
+
+        <link rel='stylesheet' type='test/css' href='plugins/sweetalert2.min.css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/estilos_001.css">
+
+        
 
     </head>
     <body class="noselect">
@@ -76,15 +85,53 @@
         </div>
 
         <div class="fondo">
-            <form id="form_2" class="container_2">
+            <form id="form_2" class="container_2" method="POST">
+                <style>
+                    button{
+                        height: 40px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        display: inline-block;
+                        transition: 0.5s;
+                        outline: none;
+                        min-height: 30px;
+                        border: 0px;
+                        border-bottom: 2px solid #ccc;
+                        border: none 0px transparent;
+                        border-radius: 20px;
+                    }
+                    button:hover{
+                        background-color: rgba(47, 255, 71, 0.638);
+                        transform: scale(1.2);
+                    }
+                    input[type=submit]{
+                        height: 40px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        margin-bottom: 15px;
+                        width: 100%;
+                        display: inline-block;
+                        transition: 0.5s;
+                        outline: none;
+                        min-height: 30px;
+                        border: 0px;
+                        border-bottom: 2px solid #ccc;
+                        border: none 0px transparent;
+                        border-radius: 20px;
+                    }
+                    input[type=submit]:hover{
+                        background-color: rgba(47, 255, 71, 0.638);
+                        transform: scale(1.2);
+                    }
+                </style>
                 <div class="in">
                     <img src="style/img/work-it-black.png">
 
-                    <input type="email" placeholder="email">
-                    <input type="password" placeholder="contraseña">
-
+                    <input type="email" placeholder="email" name="email">
+                    <input type="password" placeholder="contraseña" name="password">
                     
-                    <input type="submit" id="submit" class=>
+                    
+                    <input type="submit" name="button" value="submit">
 
                 </div>
                 <div id="olvi-div">
@@ -108,6 +155,38 @@
         <script src="js/materialize.min.js"></script>
         <!-- JS Main -->
         <script src="js/main.js"></script>
+        <style>
+                .in input[type=submit]:hover{
+                    background-color: rgba(47, 255, 71, 0.638);
+                    transform: scale(1.1);
+                }
+                ::placeholder {
+                    color: #555;
+                    opacity: 1; /* Firefox */
+                }
+
+                :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: #555;
+                }
+
+                ::-ms-input-placeholder { /* Microsoft Edge */
+                    color: #555;
+                }
+            </style>
+            
     </body>
+    <script src='\work\plugins\sweetalert2.all.min.js'></script>
+    <script src="js/sweetalert2@11.js"></script>
+    
+    <style>
+        body{
+            background-image: linear-gradient(-45deg, #ffffff 50%, #797979 50%);
+        }
+    </style>
+    <?php 
+        include ('database/login.php');
+    ?>
+
+    
 </html>
 

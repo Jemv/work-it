@@ -1,4 +1,6 @@
-
+<?php
+    include_once('C:\xampp\htdocs\work\database\session.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +47,7 @@
                             <span class="nav__name">Home</span>
                         </a>    
 
-                        <a href="\work\user.php#" class="nav__link active">
+                        <a href="\work\user.php" class="nav__link active">
                             <i class='bx bx-user nav__icon' ></i>
                             <span class="nav__name">Cuenta</span>
                         </a>
@@ -65,7 +67,7 @@
                             <span class="nav__name">Empresas</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="\work\conocenos.php" class="nav__link">
                             <i class='bx bx-user-voice nav__icon'></i>
                             <span class="nav__name">Conocenos</span>
                         </a>
@@ -91,69 +93,90 @@
 
         <?php include_once 'includes/templates/header.php'?>
         <!--Nav-->
+        <?php 
+            $id = $_SESSION['id'];
+            $s = "select * from cuenta where id='$id'";
+         ?>
+        <?php if ($complete_register_user == 1): ?>
+            <div class="user-header">
 
-        <div class="user-header">
+                <div class="grid_user">
+                    
+                    <!--========-->                
+                    <div class="user_img">
+                        <img src="/work/gorilla.png">
+                    </div>
+                    <!--========-->
+                    <div class="user_box_left">
+                        <div class="title_user_left">Datos Personales</div>
+                        <div class="grid_user_datospersonales">
+                            <!--========-->
+                            <div class="user_dato">Nombre</div>
+                            <div><?php echo $name_user; ?></div>                        
+                            <!--========-->
+                            <div class="user_dato">Telefono</div>
+                            <div><?php echo $phone_user; ?></div>
+                            <!--========-->
+                            <div class="user_dato">Email</div>
+                            <div><?php echo $email_user; ?></div>
+                            <!--========-->
+                            <div class="user_dato">Edad</div>
+                            <div><?php echo $edad_user; ?></div>
+                            <!--========-->
+                            <div class="user_dato">Ciudad</div>
+                            <div><?php echo $city_user; ?></div>
+                            <!--========-->
 
-            <div class="grid_user">
+                        </div>
+                    </div>
+                    <!--========-->
                 
-                <!--========-->                
-                <div class="user_img">
-                    <img src="/work/gorilla.png">
-                </div>
-                <!--========-->
-                <div class="user_box_left">
-                    <div class="title_user_left">Datos Personales</div>
-                    <div class="grid_user_datospersonales">
-                        <!--========-->
-                        <div class="user_dato">Nombre</div>
-                        <div>Ricky</div>                        
-                        <!--========-->
-                        <div class="user_dato">Telefono</div>
-                        <div>868 796 8684</div>
-                        <!--========-->
-                        <div class="user_dato">Email</div>
-                        <div>emiliomontesv@hotmail.com</div>
-                        <!--========-->
-                        <div class="user_dato">Edad</div>
-                        <div>24</div>
-                        <!--========-->
-                        <div class="user_dato">Ciudad</div>
-                        <div>Matamoros</div>
-                        <!--========-->
+                    <div class="user_box_rigth">
+                        <div class="title_user_rigth">Perfil</div>
+                        <div class="content_user"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus consectetur quisquam eum magnam aliquam tenetur perspiciatis doloribus voluptatibus! Suscipit dolore magnam vero tempore odit, deleniti incidunt dolor debitis saepe? Perferendis.</div>
+                    </div>
 
+
+            </div>
+            <!--========-->
+            <div class="grid_bottom">
+                <div class='content_bottom border'>
+                    <div class="title_bottom">
+                        Experencia Labroral
+                    </div>
+                    <div class='exp_laboral_content'>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, modi, beatae labore praesentium nemo dolores sequi numquam officiis possimus magni impedit voluptatem rerum adipisci vel sapiente dicta maxime temporibus? Expedita?
                     </div>
                 </div>
-                <!--========-->
+                <div class='content_bottom'>
+                    <div class='title_bottom'>
+                        Educacion
+                    </div>
+                    <div class='educacion_content'>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias modi, deserunt sint veniam neque officiis similique error qui illo facilis delectus sit eius dolor omnis cum dicta eligendi praesentium.
+                    </div>
+                </div>
+            </div>
+            <!--========-->
             
-                <div class="user_box_rigth">
-                    <div class="title_user_rigth">Perfil</div>
-                    <div class="content_user"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus consectetur quisquam eum magnam aliquam tenetur perspiciatis doloribus voluptatibus! Suscipit dolore magnam vero tempore odit, deleniti incidunt dolor debitis saepe? Perferendis.</div>
-                </div>
+            <div class='espacio'></div>
 
-
-        </div>
-        <!--========-->
-        <div class="grid_bottom">
-            <div class='content_bottom border'>
-                <div class="title_bottom">
-                    Experencia Labroral
-                </div>
-                <div class='exp_laboral_content'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, modi, beatae labore praesentium nemo dolores sequi numquam officiis possimus magni impedit voluptatem rerum adipisci vel sapiente dicta maxime temporibus? Expedita?
-                </div>
-            </div>
-            <div class='content_bottom'>
-                <div class='title_bottom'>
-                    Educacion
-                </div>
-                <div class='educacion_content'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestias modi, deserunt sint veniam neque officiis similique error qui illo facilis delectus sit eius dolor omnis cum dicta eligendi praesentium.
-                </div>
-            </div>
-        </div>
-        <!--========-->
-        
-        <div class='espacio'></div>
-
+            
+        <?php else: ?>
+            <script src='\work\plugins\sweetalert2.all.min.js'></script>
+            <script src="js/sweetalert2@11.js"></script>                       
+            <script>
+                Swal.fire({
+                    icon:'warning',
+                    title:'Error',
+                    text:'Le hace falta llenar el registro',
+                    button:{
+                        text:'Continuar'
+                    }
+                }).then(function(){
+                    window.location='register_complete.php';
+                })
+            </script>
+        <?php endif; ?>
     </body>
 </html>

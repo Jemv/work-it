@@ -1,5 +1,6 @@
-
-
+<?php 
+    include_once('C:\xampp\htdocs\work\database\session.php');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,6 +17,10 @@
         <script src="includes/templates/js/main.js"></script>
     </head>
     <body id="body-pd" class="noselect">
+
+        <?php 
+            echo $email_user;
+         ?>
 
         <!--Nav-->
 
@@ -46,7 +51,7 @@
                             <span class="nav__name">Home</span>
                         </a>    
 
-                        <a href="\work\user.php#" class="nav__link">
+                        <a href="\work\user.php" class="nav__link">
                             <i class='bx bx-user nav__icon' ></i>
                             <span class="nav__name">Cuenta</span>
                         </a>
@@ -66,7 +71,7 @@
                             <span class="nav__name">Empresas</span>
                         </a>
 
-                        <a href="#" class="nav__link">
+                        <a href="\work\conocenos.php" class="nav__link">
                             <i class='bx bx-user-voice nav__icon'></i>
                             <span class="nav__name">Conocenos</span>
                         </a>
@@ -81,7 +86,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="nav__link">
+                <a class="nav__link" href="session-clear.php">
                     <i class='bx bx-log-out nav__icon' id="log_out"></i>
                     <span class="nav__name" id='log_out'>Salir</span>
                 </a>
